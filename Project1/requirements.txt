@@ -3,3 +3,4 @@ pip install selenium
 pip install pytest	
 Eclipse:
   python packages for eclipse
+  set interpreter pyunit to py.test runner  

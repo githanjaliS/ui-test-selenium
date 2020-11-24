@@ -16,6 +16,8 @@ class TestFirst(object):
 	'''
 
 	def testComparePrice(self):
+		
+		#set up test case data
 		item = 'iPhone XR (64GB) - Yellow'
 		'''
 		Calling methods from TestReliencePage to perform the Action of extracting price value from web elements
@@ -27,7 +29,7 @@ class TestFirst(object):
 		product_in_Rel.buttonClick() #clicks on search_button to perform search action
 		assert product_in_Rel.assertItem() #asserts if the item exists
 		self.prod_reli_value = product_in_Rel.findValue() #returns the price value of the item
-		price_in_rel = BaseUtils.BaseUserUtils.extractValue(self.prod_reli_value.text) #convert and extract int value from string to comparision
+		price_in_rel = BaseUtils.extractValue(self.prod_reli_value.text) #convert and extract int value from string to comparision
 		
 		'''
 		Calling methods from TestReliencePage to perform the Action of extracting price value from web elements
@@ -40,7 +42,7 @@ class TestFirst(object):
 		product_in_flip.buttonClick() #clicks on search_button to perform search action
 		assert product_in_flip.assertItem() #asserts if the item exists
 		self.prod_flip_value = product_in_flip.findValue() #returns the price value of the item
-		price_in_flip = BaseUtils.BaseUserUtils.extractValue(self.prod_flip_value.text) #convert and extract int value from string to comparision
+		price_in_flip = BaseUtils.extractValue(self.prod_flip_value.text) #convert and extract int value from string to comparision
 		
 		#prints the price of items
 		print("Price of {} in Relience Digital is {}".format(item,self.prod_reli_value.text))
@@ -48,9 +50,9 @@ class TestFirst(object):
 
 		#price comparision to find the website selling the item in a comparitively lesser value
 		if price_in_rel > price_in_flip:
-			print("cheapest in flipkart")
+			print("From the above comparision {} is Cheapest in flipkart.".format(item))
 		else:	
-			print("cheapest in Relience")
+			print("From the above comparision {} is Cheapest in Relience Digital.".format(item))
 
 		#driver exit method	
 		product_in_Rel.tearDown()

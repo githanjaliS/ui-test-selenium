@@ -1,0 +1,6 @@
+The test file testComparePrice.py should hive the below outot to the console
+{
+Price of iPhone XR (64GB) - Yellow in Relience Digital is ₹47,900
+Price of iPhone XR (64GB) - Yellow in Flipkart is ₹44,900
+From the above comparision iPhone XR (64GB) - Yellow is Cheapest in flipkart
+}

@@ -6,3 +6,5 @@
 6. Repeat steps 2 to 4 and get the price.
 7. Compare the price on both the website and determine which website.
 has lesser value for the iPhone and print the final result on the console.
+
+Note: Currently this project uses only chrome driver, can add more webdrivers in the base class of the project
