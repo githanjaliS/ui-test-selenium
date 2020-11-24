@@ -1,3 +1,5 @@
 python 3.x
 pip install selenium
 pip install pytest	
+Eclipse:
+  python packages for eclipse
