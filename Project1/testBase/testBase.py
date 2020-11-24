@@ -7,15 +7,15 @@ chrome_options.add_argument("--disable-notifications")
 
 class TestBase(object):
 	'''
-	doc string
+	Base class of Project1 which contains the web driver
 	'''
 
 	def __init__(self):
 		'''
-		constructor
+		empty constructor
 		'''
 
-
+	
 	def initialisationDriver(url):
 		driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options = chrome_options)
 		driver.delete_all_cookies();
@@ -23,7 +23,6 @@ class TestBase(object):
 		driver.get(url)
 		return driver
 
-	#def implicitly_wait(self,)
 
 
 
