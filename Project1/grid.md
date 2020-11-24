@@ -20,5 +20,6 @@ pip install python
 pip install webdriver_manager
 py.test -s -v Project1/testCases/testComparePrice.py
 
+PS: Please check the git branch of your repor before execution, you should be pointing to "finalbranch"
 Note: Should work fine if all requiremnts are satisfied
 
