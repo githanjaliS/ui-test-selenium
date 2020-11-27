@@ -16,7 +16,7 @@ cd ui-test-selenium
 virtualenv <name> OR python -m venv <name>/
 source <name>/bin/activate
 pip  install selenium
-pip install python
+pip install pytest
 pip install webdriver_manager
 py.test -s -v Project1/testCases/testComparePrice.py
 
